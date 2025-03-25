@@ -1,0 +1,138 @@
+Sección: Aplicación de CSS3 en Elementos HTML
+
+1. Estilización Avanzada con Selectores CSS3
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de Selectores y Animaciones CSS3</title>
+    <style>
+        /* Selector de atributo */
+        input[type="text"] {
+            border: 2px solid #4CAF50;
+            padding: 10px;
+            width: 200px;
+        }
+
+        /* Selector :nth-child() para resaltar filas impares */
+        table tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        /* Selector :hover para efecto al pasar el mouse */
+        button:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* Transición para suavizar el cambio de color */
+        button {
+            padding: 10px 20px;
+            background-color: #ddd;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Ejemplos de Selectores CSS3</h2>
+
+<!-- Input con selector de atributo -->
+<input type="text" placeholder="Escribe algo...">
+
+<!-- Tabla con filas resaltadas -->
+<table border="1" cellspacing="0" cellpadding="5">
+    <tr>
+        <td>Fila 1</td>
+        <td>Contenido 1</td>
+    </tr>
+    <tr>
+        <td>Fila 2</td>
+        <td>Contenido 2</td>
+    </tr>
+    <tr>
+        <td>Fila 3</td>
+        <td>Contenido 3</td>
+    </tr>
+</table>
+
+<!-- Botón con efecto hover -->
+<button>Haz clic aquí</button>
+
+</body>
+</html>
+
+2. Animación con CSS3: Efecto de Movimiento
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Animación CSS3</title>
+    <style>
+        /* Definición de la animación */
+        @keyframes moverCaja {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(300px);
+                background-color: #4CAF50;
+            }
+            100% {
+                transform: translateX(0);
+                background-color: #ff5722;
+            }
+        }
+
+        /* Aplicación de la animación */
+        .caja {
+            width: 100px;
+            height: 100px;
+            background-color: #ff9800;
+            position: relative;
+            animation: moverCaja 4s infinite;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Ejemplo de Animación CSS3</h2>
+
+<div class="caja"></div>
+
+</body>
+</html>
+
+3. Uso de un Framework CSS3: Bootstrap para Estilización Rápida
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo con Bootstrap</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center">Formulario con Bootstrap</h2>
+    <form class="p-4 border rounded bg-light">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+        </div>
+        <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo">
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+
+</body>
+</html>

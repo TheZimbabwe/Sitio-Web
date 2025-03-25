@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje de Marcas</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lenguaje de Marcas</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="arquitectura.html">Arquitectura de Servicios</a></li>
+                <li><a href="lenguaje.html">Lenguaje de Marcas</a></li>
+                <li><a href="css3.html">CSS3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Ejemplos de Etiquetas HTML5</h2>
+        
+        <!-- Ejemplo 1: Formulario con diferentes controles -->
+        <article>
+            <h3>1. Formulario de Registro</h3>
+            <form id="registroForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="tu@email.com">
+
+                <label for="fecha">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha" name="fecha">
+
+                <label for="nivel">Nivel de Experiencia:</label>
+                <select id="nivel" name="nivel">
+                    <option value="principiante">Principiante</option>
+                    <option value="intermedio">Intermedio</option>
+                    <option value="avanzado">Avanzado</option>
+                </select>
+
+                <label>Intereses:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="html" name="intereses" value="html">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" id="css" name="intereses" value="css">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" id="js" name="intereses" value="js">
+                    <label for="js">JavaScript</label>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </article>
+
+        <!-- Ejemplo 2: Reproducción de medios -->
+        <article>
+            <h3>2. Reproductor de Audio y Video</h3>
+            <audio controls>
+                <source src="../assets/media/audio.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+
+            <video width="320" height="240" controls>
+                <source src="../assets/media/video.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </article>
+
+        <!-- Ejemplo 3: Barra de progreso y medidor -->
+        <article>
+            <h3>3. Indicadores de Progreso</h3>
+            <label>Progreso del curso:</label>
+            <progress value="70" max="100">70%</progress>
+
+            <label>Nivel de dificultad:</label>
+            <meter value="6" min="0" max="10" low="3" high="7" optimum="5">6 de 10</meter>
+        </article>
+
+        </section>
+
+    <footer>
+        <p>&copy; 2025 Mi Sitio Web</p>
+    </footer>
+</body>
+</html>
+        <!-- Ejemplo 4: Etiqueta <article> para Contenido de Noticias -->
+        <article>
+            <h3>4. Contenido de Noticias</h3>   
+            <h4>Noticia de Ultima Hora</h4>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de Article</title>
+    <style>
+        article {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<article>
+    <h2>Severance tendrá tercera temporada. Lo que sabemos al momento</h2>
+    <p>La confirmación de una tercera temporada de Severance llegó por parte de Tim Cook, el CEO de Apple, quien publicó en redes sociales una referencia directa a las tradiciones de Lumon, empresa en la que trabajan los protagonistas de esta serie, diciendo “Temporada 3 disponible bajo solicitud”, sí, tal como lo están los apretones de mano y casi cualquier forma de interacción en esta polémica compañía.</p>
+    <footer>
+        <p>Publicado el: <time datetime="2025-03-23">23 de marzo de 2025 a las 20:40 hora Ciudad de México</time></p>
+    </footer>
+</article>
+
+</body>
+</html>
+        <!-- Ejemplo 5: Etiqueta details para Información Desplegable -->
+        <article>
+            <h3>5. Información Desplegable</h3>
+            <details>
+                <summary>Características de HTML5</summary>
+                <ul>
+                    <li>Elementos semánticos mejorados</li>
+                    <li>Soporte multimedia nativo</li>
+                    <li>APIs web avanzadas</li>
+                    <li>Mejoras en formularios</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Novedades de CSS3</summary>
+                <ul>
+                    <li>Flexbox y Grid</li>
+                    <li>Animaciones y transiciones</li>
+                    <li>Variables CSS</li>
+                    <li>Media queries</li>
+                </ul>
+            </details>
+        </article>
